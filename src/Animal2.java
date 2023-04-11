@@ -8,7 +8,7 @@ class Pig2 implements Animal2 {
         System.out.println("The pig says: wee wee 2x");
     }
     public void sleep() {
-        System.out.println("Zzz 2x");
+        System.out.println("Zzz 1x");
     }
 }
 
