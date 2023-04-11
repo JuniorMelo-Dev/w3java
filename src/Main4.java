@@ -6,7 +6,7 @@ public class Main4 {
     }
 
     public static void main(String[] args) {
-        Level myVar = Level.LOW;
+        Level myVar = Level.HIGH;
         
         switch (myVar) {
             case LOW:
