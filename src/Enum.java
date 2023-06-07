@@ -1,4 +1,4 @@
-public class Main4 {
+public class Enum {
     enum Level {
         LOW,
         MEDIUM,
@@ -6,8 +6,14 @@ public class Main4 {
     }
 
     public static void main(String[] args) {
+
+        // Opção 01
+        Level myVar = Level.LOW;
+        System.out.println(myVar);
+        /*
+        // Opção 02
         Level myVar = Level.HIGH;
-        
+
         switch (myVar) {
             case LOW:
                 System.out.println("Low level");
@@ -19,5 +25,11 @@ public class Main4 {
                 System.out.println("High level");
                 break;
         }
+
+        // Percorrendo um Enum
+        for (Level myVar : Level.values()) {
+            System.out.println(myVar);
+        }
+    */    
     }
 }
