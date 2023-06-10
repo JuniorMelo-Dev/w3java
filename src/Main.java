@@ -1,31 +1,22 @@
-import java.util.HashMap;
+import java.util.HashSet;
 
 class Main {
     public static void main(String[] args) {
 
-        HashMap<String, String> capitalCities = new HashMap<String, String>();
+        HashSet<Integer> numeros = new HashSet<Integer>();
 
-//      Adicionando Chave e Valor ao objeto
-        capitalCities.put("Brazil", "Brasilia");
-        capitalCities.put("EUA", "Washington DC");
-        capitalCities.put("Alemanha", "Berlin");
-        capitalCities.put("Russia", "Moscou");
+        // Adicionando valores ao HashSet
+        numeros.add(9);
+        numeros.add(26);
+        numeros.add(15);
+        numeros.add(18);
 
-//      System.out.println(capitalCities);
-
-//      Acessar um item
-        System.out.println(capitalCities.get("Brazil"));
-        
-//      Remover um item
-        System.out.println(capitalCities.remove("EUA"));
-
-//      Quantidade de itens
-        
-//      Percorrendo um HashMap com forEach()
-//      Use .keySet() para retornar a chave e .values() para retornar os valores
-        for (String i : capitalCities.keySet()) {
-            System.out.println("Chave: " + i + " valor: " + capitalCities.get(i));
+        for (int i = 1; i <= 30; i++) {
+            if(numeros.contains(i)) {
+                System.out.println(i + " foi encontrado no Set.");
+            } else {
+                System.out.println(i + " não foi encontrado no Set.");
+            }
         }
-        
     }
 }
