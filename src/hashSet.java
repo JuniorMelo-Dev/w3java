@@ -1,24 +1,25 @@
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 public class hashSet {
 
     public static void main(String[] args) {
 
-        // HashSet é uma coleção de itens onde cada item é único
-        HashSet<String> cursos = new HashSet<>();
-
-        // Adicionando itens ao hashSet()
-        cursos.add("MySQL");
-        cursos.add("Java");
-        cursos.add("JavaScript");
-        cursos.add("NodeJS");
-        cursos.add("TypeScript");
-        cursos.add("Angular");
-        cursos.add("MongoDB");
-        System.out.println(cursos);
-
-        // Verificar se um item existe
-        System.out.println(cursos.contains("Java"));
+        // Iterator
+        ArrayList<Integer> numeros = new ArrayList<Integer>();
+        numeros.add(25);
+        numeros.add(59);
+        numeros.add(48);
+        numeros.add(2);
+        numeros.add(16);
+        Iterator<Integer> it = numeros.iterator();
+        while(it.hasNext()) {
+            Integer i = it.next();
+            if(i < 20) {
+                it.remove();
+            }
+        }
+        System.out.println("Restaram os números: " + numeros);
     }
 
 }
